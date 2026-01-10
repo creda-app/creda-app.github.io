@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Organization | GitHub Pages</title>
+    <style>
+        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #0969da; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        header { padding: 4rem 2rem; text-align: center; background: #f6f8fa; border-bottom: 1px solid #d0d7de; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        h1 { margin-bottom: 0.5rem; font-size: 2.5rem; }
+        .tagline { color: #57606a; font-size: 1.2rem; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .card { padding: 1.5rem; border: 1px solid #d0d7de; border-radius: 6px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #57606a; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Organization</h1>
+        <p class="tagline">Building the future of open source, one commit at a time.</p>
+    </header>
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Main Repo</h3>
+                <p>Our flagship software project for 2026.</p>
+                <a href="#">View on GitHub →</a>
+            </div>
+            <div class="card">
+                <h3>Documentation</h3>
+                <p>Learn how to integrate our tools into your workflow.</p>
+                <a href="#">Read Docs →</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 Your Organization Name. Hosted on GitHub Pages.
+    </footer>
+</body>
+</html>
