@@ -1,45 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Organization | GitHub Pages</title>
-    <style>
-        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #0969da; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        header { padding: 4rem 2rem; text-align: center; background: #f6f8fa; border-bottom: 1px solid #d0d7de; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        h1 { margin-bottom: 0.5rem; font-size: 2.5rem; }
-        .tagline { color: #57606a; font-size: 1.2rem; }
-        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-        .card { padding: 1.5rem; border: 1px solid #d0d7de; border-radius: 6px; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        a { color: var(--accent); text-decoration: none; font-weight: 600; }
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #57606a; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Organization</h1>
-        <p class="tagline">Building the future of open source, one commit at a time.</p>
-    </header>
-    <div class="container">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="card">
-                <h3>Main Repo</h3>
-                <p>Our flagship software project for 2026.</p>
-                <a href="#">View on GitHub →</a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Creda - Your AI Finance Companion</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Creda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#how">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#insights">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
+                    </ul>
+                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="#download">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Get Early Access</span>
+                        </span>
+                    </a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Documentation</h3>
-                <p>Learn how to integrate our tools into your workflow.</p>
-                <a href="#">Read Docs →</a>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Mashead text and app badges-->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h1 class="display-1 lh-1 mb-3">Creda brings clarity to your money in seconds.</h1>
+                            <p class="lead fw-normal text-muted mb-5">Connect your accounts, ask questions in plain language, split expenses, and see exactly where your money goes. Creda is your AI-powered finance companion designed to help you spend smarter and settle faster.</p>
+                            <div class="d-flex flex-column flex-lg-row align-items-center gap-4">
+                                <div class="text-center">
+                                    <span class="d-inline-block opacity-75">
+                                        <img class="app-badge" src="assets/img/google-play-badge.svg" alt="Coming soon on Google Play" />
+                                    </span>
+                                    <div class="small text-muted mt-2">Coming soon on Google Play</div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="d-inline-block opacity-75">
+                                        <img class="app-badge" src="assets/img/app-store-badge.svg" alt="Coming soon on Apple Store" />
+                                    </span>
+                                    <div class="small text-muted mt-2">Coming soon on Apple Store</div>
+                                </div>
+                            </div>
+                            <div class="mt-4 d-flex flex-wrap gap-3 text-muted">
+                                <span><i class="bi-shield-check me-2"></i>Bank-grade security</span>
+                                <span><i class="bi-lightning-charge me-2"></i>Real-time insights</span>
+                                <span><i class="bi-people me-2"></i>Split with friends</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Masthead device mockup feature-->
+                        <div class="masthead-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle></svg
+                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
+                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- PUT CONTENTS HERE:-->
+                                        <!-- * * This can be a video, image, or just about anything else.-->
+                                        <!-- * * Set the max width of your media to 100% and the height to-->
+                                        <!-- * * 100% like the demo example below.-->
+                                        <img src="assets/img/home_screen.jpg" alt="Creda app home screen" style="max-width: 100%; height: 100%; object-fit: cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Quote/testimonial aside-->
+        <aside class="text-center bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="h2 fs-1 text-white mb-4">"Creda feels like having a personal finance analyst in my pocket."</div>
+                        <img src="assets/img/tnw-logo.svg" alt="Tech press logo" style="height: 3rem" />
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- App features section-->
+        <section id="features">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row gx-5">
+                                <div class="col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-chat-square-dots icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Ask Creda anything</h3>
+                                        <p class="text-muted mb-0">"Why was my spending high last week?" Creda answers with personalized insights backed by your transactions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-receipt icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Receipts to expenses</h3>
+                                        <p class="text-muted mb-0">Snap a receipt and Creda auto-extracts items, taxes, and totals so you can split in seconds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-5 mb-md-0">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-graph-up icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Live spend tracking</h3>
+                                        <p class="text-muted mb-0">See real-time cashflow, category trends, and recurring charges across all your accounts.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-people icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Groups + settlements</h3>
+                                        <p class="text-muted mb-0">Trips, roommates, and teams. Create groups, track balances, and settle with one tap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-6 mx-auto">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <i class="bi-currency-exchange icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Send money to friends</h3>
+                                        <p class="text-muted mb-0">Instantly pay or request money with a clear audit trail and smart notes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-0">
+                        <!-- Features section device mockup-->
+                        <div class="features-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle></svg
+                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
+                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- PUT CONTENTS HERE:-->
+                                        <!-- * * This can be a video, image, or just about anything else.-->
+                                        <!-- * * Set the max width of your media to 100% and the height to-->
+                                        <!-- * * 100% like the demo example below.-->
+                                        <img src="assets/img/wallet.jpg" alt="Creda insights screen" style="max-width: 100%; height: 100%; object-fit: cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Basic features section-->
+        <section class="bg-light" id="how">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">From connected accounts to confident decisions.</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Creda connects to your banks, cards, and wallets to create a clean, real-time view of your finances. Then it turns that data into clear guidance you can act on instantly.</p>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi-link-45deg me-3 text-gradient"></i>
+                                <div>
+                                    <h4 class="h6 mb-1">1) Connect securely</h4>
+                                    <p class="text-muted mb-0">Link accounts via Plaid in under a minute. Creda never stores your bank credentials.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi-stars me-3 text-gradient"></i>
+                                <div>
+                                    <h4 class="h6 mb-1">2) Ask and automate</h4>
+                                    <p class="text-muted mb-0">Ask Creda to summarize spending, find recurring charges, or prepare a group split.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="bi-lightning-charge me-3 text-gradient"></i>
+                                <div>
+                                    <h4 class="h6 mb-1">3) Take action fast</h4>
+                                    <p class="text-muted mb-0">Send money, request payment, or settle balances directly inside the app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="features-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle></svg
+                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
+                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- PUT CONTENTS HERE:-->
+                                        <!-- * * This can be a video, image, or just about anything else.-->
+                                        <!-- * * Set the max width of your media to 100% and the height to-->
+                                        <!-- * * 100% like the demo example below.-->
+                                        <img src="assets/img/Accounts.jpg" alt="Creda Accounts screen" style="max-width: 100%; height: 100%; object-fit: cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Insights section-->
+        <section id="insights">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="display-5 lh-1 mb-3">Insights that feel personal</h2>
+                        <p class="lead fw-normal text-muted mb-4">Creda highlights where your money goes, what changed, and what to do next. Every insight is grounded in your real transactions.</p>
+                        <div class="row gx-4">
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-pie-chart me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Category trends</h4>
+                                        <p class="text-muted mb-0">Spot rising categories and cut spend early.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-arrow-repeat me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Recurring charges</h4>
+                                        <p class="text-muted mb-0">Find subscriptions you forgot about.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-bank me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Institution split</h4>
+                                        <p class="text-muted mb-0">Understand which account drives spend.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-calendar3 me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Daily heatmap</h4>
+                                        <p class="text-muted mb-0">Discover your spending cadence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="features-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle></svg
+                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
+                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- PUT CONTENTS HERE:-->
+                                        <!-- * * This can be a video, image, or just about anything else.-->
+                                        <!-- * * Set the max width of your media to 100% and the height to-->
+                                        <!-- * * 100% like the demo example below.-->
+                                        <img src="assets/img/insights.jpg" alt="Creda insights screen" style="max-width: 100%; height: 100%; object-fit: cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted text-center mt-3">Replace with a screenshot of the Insights dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="cta">
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h2 class="text-white display-1 lh-1 mb-4">
+                        Ready to feel in control?
+                        <br />
+                        Start with Creda today.
+                    </h2>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="#download">Download the app</a>
+                </div>
+            </div>
+        </section>
+        <!-- Trust section-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="display-5 lh-1 mb-3">Security you can trust</h2>
+                        <p class="lead fw-normal text-muted mb-4">Creda uses bank-grade encryption, short-lived access tokens, and read-only aggregation where possible. We never sell your data.</p>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-shield-lock me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Encrypted data</h4>
+                                        <p class="text-muted mb-0">All sensitive data is protected in transit and at rest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-eye-slash me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Privacy first</h4>
+                                        <p class="text-muted mb-0">Creda never stores your bank login credentials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-lightning me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Real-time alerts</h4>
+                                        <p class="text-muted mb-0">Stay up to date on balances and group activity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi-people me-3 text-gradient"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">Built for sharing</h4>
+                                        <p class="text-muted mb-0">Clear logs make every group expense transparent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 bg-light rounded-4">
+                            <h4 class="h6">What people love about Creda</h4>
+                            <ul class="text-muted mb-0">
+                                <li>Get answers in seconds with the Creda AI assistant.</li>
+                                <li>Split expenses with item-level accuracy.</li>
+                                <li>See trends across all your banks in one view.</li>
+                                <li>Settle balances without leaving the app.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section-->
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5">
+                    <div class="col-lg-6">
+                        <h2 class="display-5 lh-1 mb-4">Frequently asked questions</h2>
+                        <p class="lead fw-normal text-muted">Everything you need to know before you download.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <h4 class="h6 mb-1">Is Creda free?</h4>
+                            <p class="text-muted mb-0">Yes. Creda is free to download and use. Premium capabilities may be introduced later.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="h6 mb-1">Which banks are supported?</h4>
+                            <p class="text-muted mb-0">Creda uses Plaid, which supports thousands of banks and credit cards worldwide.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="h6 mb-1">Can I split expenses with non-users?</h4>
+                            <p class="text-muted mb-0">You can track balances for anyone; invite friends to settle instantly.</p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="h6 mb-1">How does the AI assistant work?</h4>
+                            <p class="text-muted mb-0">Creda uses secure, on-device and server-side intelligence to summarize and explain your spending.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App badge section-->
+        <section class="bg-gradient-primary-to-secondary" id="download">
+            <div class="container px-5">
+                <h2 class="text-center text-white font-alt mb-4">Download Creda and take control today.</h2>
+                <p class="text-center text-white-50 mb-5">Join early adopters using Creda to track spending, settle with friends, and get AI-powered guidance every day.</p>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4">
+                    <div class="text-center">
+                        <span class="d-inline-block opacity-75">
+                            <img class="app-badge" src="assets/img/google-play-badge.svg" alt="Coming soon on Google Play" />
+                        </span>
+                        <div class="small text-white-50 mt-2">Coming soon on Google Play</div>
+                    </div>
+                    <div class="text-center">
+                        <span class="d-inline-block opacity-75">
+                            <img class="app-badge" src="assets/img/app-store-badge.svg" alt="Coming soon on Apple Store" />
+                        </span>
+                        <div class="small text-white-50 mt-2">Coming soon on Apple Store</div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a class="btn btn-light btn-lg rounded-pill px-5" href="https://storage.googleapis.com/your-bucket-name/creda-app.apk">
+                        <i class="bi-download me-2"></i>
+                        Download Android APK
+                    </a>
+                    <p class="text-white-50 mt-3 mb-0">Direct APK download for Android devices.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Creda 2026. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Feedback Modal-->
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Get early access</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Request access</button></div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        &copy; 2026 Your Organization Name. Hosted on GitHub Pages.
-    </footer>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
